@@ -10,17 +10,29 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
     
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=dehaze" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=close" />
+    
     
 </head>
 <body>
     <header class="portfolio" id="head">Srashti Verma
         <nav class="anchor">
-    
+            <input type="checkbox" id="sidebar-active">
+            <label for="sidebar-active" class="open-sidebar-button">
+                <span class="material-symbols-outlined"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></span>
+            </label>
+            <div class="links-container">
+                <label for="sidebar-active" class="close-sidebar-button">
+                    <span class="material-symbols-outlined">close</span>
+                </label>
+            
             <a href="#Home" class="active">Home</a>
             <a href="#About">About</a>
             <a href="#Education">Education</a>
             <a href="#Skills">Skills</a>
             <a href="#Contact">Contact</a>
+        </div>
         </nav>
 
     </header>
@@ -52,9 +64,9 @@
         <section id="About">
             <h3>About Me</h3>
         <div>
-            <p>Hey, My name is Srashti Verma, currently pursuing Bachelor's of Computer Application from Amrapali Group of Institutes, Haldwani, Uttarakhand. I have completed my Schooling from Maria Assumpta Convent School, Kashipur. My technical skills are C/C++, python, HTML, CSS. I have a keen interest in Front End Development and want to grow my career in it. <br>Talking about my hobbies, in my free time I writes. Writing helps me to inhance my observation skill as well my communication skills.  My confidence, hard work, creative thinking make me different from others and also helps me achieve goal in life!!
+            <p>Hey, My name is Srashti Verma, currently pursuing Master's of Computer Application from Amrapali University, Haldwani, Uttarakhand. I have completed my Bachelor's of Computer Application From Kumaun University and I have completed my Schooling from Maria Assumpta Convent School, Kashipur. My technical skills are C/C++, python, HTML5, CSS3, JavaScript. I have a keen interest in Front End Development and want to showcase my skills in it. <br>Talking about my hobbies, in my free time I writes. Writing helps me to inhance my observation skill as well my communication skills.  My confidence, hard work, creative thinking make me different from others and also helps me achieve goal in life!!
             </p>
-            <button><a href="Srashti's Resume-2.pdf" download="srashti verma" style="color: black; text-decoration: none; font-size: 15px;" >MY RESUME</a></button>
+            <button><a href="Srashti Resume.pdf" download="srashti verma" style="color: black; text-decoration: none; font-size: 15px;" >MY RESUME</a></button>
         </div>
         
     
@@ -66,7 +78,11 @@
             <h3>Education</h3>
             <div class="Education">
             <div class="college">
-            <h4><i style='font-size:20px' class='fas'>&#xf19d;</i></h4>
+            <h4><i style='font-size:20px' class='fas'>&#xf19d;</i>PG</h4>
+            <p>Amrapali University, Haldwani, Nainital<br>2024-2026</p>
+            </div>
+            <div class="college">
+            <h4><i style='font-size:20px' class='fas'>&#xf19d;</i>UG</h4>
             <p>Amrapali Group of Institute, Haldwani, Nainital<br>2021-2024</p>
             </div>
             <div class="school">
@@ -79,32 +95,58 @@
         <!--Skill section-->
         <section id="Skills">
             <h3>Skills</h3>
+            <div class="frontend"><h4>Technical</h4></div>
             <div class="container">
                 
-                <h4>technical skills</h4>
-                <div class="box"><img src="HTML.png" alt=""><p>I am almost familiar with this language and the tags used in it.</p></div>
-                <div class="box"><img src="CSS.png" alt=""><p>I am intermediate in this language, practising day by day to inhance my knowledge.</p></div>
-                <div class="box"><img src="PYTHON.png" alt=""><p>I am well known about this language and the logics & operations used in it.</p></div><br>
-                <div class="box"><img src="download.png" alt=""><p>I am a beginer and Currently learning.</p></div>
-                <div class="box"><img src="SQL.png" alt=""><p>Familiar with all the queries and contrainsts used in sql.</p></div>
-                <div class="box"><img src="c.png" alt=""><p>I have a good command in C language and my basic concepts are almost clear.</p></div>
                 
-                    
-                    <h4>other skills</h4>
-                    <div class="list">
-                    <ol>
-                        <li>problem solving</li>
-                        <li>communication</li>
-                        <li>public speaking</li>
-                        <li>creative thinking</li>
-                        <li>Leadership</li>
-                    </ol>
+                <div class="box"><img src="c.png" alt=""></div>
+                <div class="box"><img src="c++.png" alt=""></div>
+                <div class="box"><img src="python.png" alt=""></div>
+            </div>
+            <div class="frontend"><h4>Frontend</h4></div>
+            <div class="container">
+                
+                
+                <div class="box"><img src="hml5.png" alt=""></div>
+                <div class="box"><img src="CSS3.jpg" alt=""></div>
+                <div class="box"><img src="js.jpg" alt=""></div>
+                <div class="box"><img src="boot.jpg" alt=""></div>
+            </div>
 
-                    </div>
+            <div class="frontend"><h4>Database</h4></div>
+            <div class="container">
+                <div class="box"><img src="mysql.jpg" alt=""></div>
 
             </div>
         </section>
 
+
+        <!--experience section-->
+        <section id="work-Experience">
+            <h3>Work Experience</h3>
+            <div class="inside">
+            <div class="experience">
+                <div class="role">
+                    Geet Govind publication
+                    <p>Aug 2025 - present</p>
+                </div>
+                <div class="des">
+                    <p>Junior Technical Executive-- <span>1. Maintain Operational data using Google Sheets and manage digital files on Mega Server.<br>2. Monitor Website performance, update content regularly, and ensure proper formatting.</span></p>
+                </div>
+            </div>
+            <div class="experience">
+                <div class="role">
+                    Geet Govind publication
+                    <p>May 2024 - June 2024</p>
+                </div>
+                <div class="des">
+                    <p>Technical Trainee-- <span>1. Database handling in Google Sheets-- data organization and management. <br>2. Technical Terminology-- Understanding of key IT concepts.</span></p>
+                </div>
+            </div>
+            </div>
+
+            
+        </section>
         <!--Contact section-->
         <section id="Contact">
             <h3>Contact</h3>

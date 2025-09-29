@@ -27,6 +27,18 @@ header{
     
     
 }
+nav{
+    display: flex;
+}
+.material-symbols-outlined{
+    fill: var(--text-color);
+}
+#sidebar-active{
+    display: none;
+}
+.open-sidebar-button, .close-sidebar-button{
+    display: none;
+}
 .anchor a.active{
     background-color: grey;
     
@@ -265,20 +277,22 @@ section{
  
 }
 .container h4{
-    text-align: left;
     text-decoration: none;
     font-size: 20px;
-    text-indent: 21%;
     text-transform: uppercase;
     color: rgb(92, 51, 51);
     
 }
-
+.frontend{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
 .box{
     
     background-color: #f2f2f2;
-    width: 200px;
-    height: 200px;
+    width: fit-content;
+    height: fit-content;
     vertical-align: middle;
     margin: 40px;
     border: 2px solid #f2f2f2;
@@ -290,9 +304,9 @@ section{
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: column;
-    box-shadow: 5px 10px #b6b1b1;
+    /*box-shadow: 2px 2px #b6b1b1;
     border-top: 3px solid rgb(75, 114, 150);
-    border-left: 3px solid rgb(75, 114, 150);
+    border-left: 3px solid rgb(75, 114, 150);*/
     
 
 }
@@ -323,10 +337,62 @@ section{
     padding: 5px;
     font-weight: 500; 
 }
+#work-Experience h3{
+    color: black;
+    text-decoration: underline;
+    padding: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;   
 
+}
 
+#work-Experience{
+        background: #e6e6e6;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        
+    }
+    .experience{
+        background-color: rgb(230, 220, 220);
+        width: 500px;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 2px 2px rgb(175, 170, 170);
+        margin-right: 20px;
+    }
+    .inside{
+        display: flex;
+    }
+    .role{
+        width: fit-content;
+        height: fit-content;
+        padding: 2px;
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .des{
+        width: fit-content;
+        height: fit-content;
+        padding: 2px;
+        font-size: 15px;
+        font-weight: 700;
+    }
+    .des span{
+        font-weight: 100;
+    }
+    .role p{
+        font-weight: 100;
+        font-size: 15px;
+    }
 #Contact{
-    background: #e6e6e6;
+    background: #f2f2f2;
     text-align: center;
     
 }
@@ -501,6 +567,18 @@ footer a{
         
         
     }
+    nav{
+    display: flex;
+}
+.material-symbols-outlined{
+    fill: var(--text-color);
+}
+#sidebar-active{
+    display: none;
+}
+.open-sidebar-button, .close-sidebar-button{
+    display: none;
+}
     .portfolio{
         text-align: left;
     }
@@ -761,20 +839,23 @@ footer a{
      
     }
     .container h4{
-        text-align: left;
         text-decoration: none;
         font-size: 20px;
-        text-indent: 21%;
         text-transform: uppercase;
         color: rgb(92, 51, 51);
         
     }
+    .frontend{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
     
     .box{
         
         background-color: #f2f2f2;
-        width: 200px;
-        height: 200px;
+        width: fit-content;
+        height: fit-content;
         vertical-align: middle;
         margin: 6px;
         border: 2px solid #f2f2f2;
@@ -786,9 +867,9 @@ footer a{
         justify-content: center;
         flex-wrap: wrap;
         flex-direction: column;
-        box-shadow: 5px 10px #b6b1b1;
+        /*box-shadow: 2px 2px #b6b1b1;
         border-top: 3px solid rgb(75, 114, 150);
-        border-left: 3px solid rgb(75, 114, 150);
+        border-left: 3px solid rgb(75, 114, 150);*/
         
     
     }
@@ -819,8 +900,58 @@ footer a{
         font-weight: 500; 
     }
     
-    #Contact{
+    #work-Experience{
         background: #e6e6e6;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        
+    }
+     #work-Experience h3{
+        color: black;
+        text-decoration: underline;
+        padding: 10px;
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;   
+    
+    }
+    .experience{
+        background-color: rgb(230, 220, 220);
+        width: 500px;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 2px 2px rgb(175, 170, 170);
+        margin-right: 20px;
+    }
+    .role{
+        width: fit-content;
+        height: fit-content;
+        padding: 2px;
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .des{
+        width: fit-content;
+        height: fit-content;
+        padding: 2px;
+        font-size: 15px;
+        font-weight: 700;
+    }
+    .des span{
+        font-weight: 100;
+    }
+    .role p{
+        font-weight: 100;
+        font-size: 15px;
+    }
+    #Contact{
+        background: #f2f2f2;
         text-align: center;
         
     }
@@ -995,6 +1126,33 @@ footer a{
         
         
     }
+    nav{
+    display: flex;
+}
+.material-symbols-outlined{
+    fill: var(--text-color);
+}
+#sidebar-active{
+    display: none;
+}
+.open-sidebar-button, .close-sidebar-button{
+    display: block;
+}
+#sidebar-active:checked ~ .links-container{
+    display: flex;
+}
+.links-container{
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    position: fixed;
+    top: 20px;
+    right: 0;
+    z-index: 10;
+    width: 30%;
+    height: 100%;
+    background-color: black;
+}
     .portfolio{
         text-align: left;
     }
@@ -1192,7 +1350,7 @@ footer a{
     .college{
         align-items: center;
         justify-content: center;
-        height: 200px;
+        height: fit-content;
         width: 270px;
         display: inline-flex;
         flex-direction: column;
@@ -1206,7 +1364,7 @@ footer a{
     .school{
         align-items: center;
         justify-content: center;
-        height: 200px;
+        height: fit-content;
         width: 270px;
         display: inline-flex;
         flex-direction: column;
@@ -1258,23 +1416,26 @@ footer a{
     .container{
         text-align: center;
         justify-items: center;
+        justify-content: center;
      
     }
     .container h4{
-        text-align: left;
         text-decoration: none;
         font-size: 18px;
-        text-indent: 21%;
         text-transform: uppercase;
         color: rgb(92, 51, 51);
         
     }
-    
+    .frontend{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
     .box{
         
         background-color: #f2f2f2;
-        width: 200px;
-        height: 200px;
+        width: fit-content;
+        height: fit-content;
         vertical-align: middle;
         margin: 15px;
         border: 2px solid #f2f2f2;
@@ -1286,9 +1447,9 @@ footer a{
         justify-content: center;
         flex-wrap: wrap;
         flex-direction: column;
-        box-shadow: 5px 10px #b6b1b1;
+       /* box-shadow: 2px 2px #b6b1b1;
         border-top: 3px solid rgb(75, 114, 150);
-        border-left: 3px solid rgb(75, 114, 150);
+        border-left: 3px solid rgb(75, 114, 150);*/
         
     
     }
@@ -1298,8 +1459,8 @@ footer a{
         margin: 5px;
     }
     .box img{
-        width: 80px;
-        height: 80px;  
+        width: 50px;
+        height: 50px;  
     }
     .list{
         margin-left: 19%;
@@ -1318,9 +1479,58 @@ footer a{
         padding: 5px;
         font-weight: 500; 
     }
-    
-    #Contact{
+    #work-Experience{
         background: #e6e6e6;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        
+    }
+    #work-Experience h3{
+        color: black;
+        text-decoration: underline;
+        padding: 10px;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;   
+    
+    }
+    .experience{
+        background-color: rgb(230, 220, 220);
+        width: 300px;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 2px 2px rgb(175, 170, 170);
+        margin-bottom: 20px;
+    }
+    .role{
+        width: fit-content;
+        height: fit-content;
+        padding: 2px;
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .des{
+        width: fit-content;
+        height: fit-content;
+        padding: 2px;
+        font-size: 15px;
+        font-weight: 700;
+    }
+    .des span{
+        font-weight: 100;
+    }
+    .role p{
+        font-weight: 100;
+        font-size: 15px;
+    }
+    #Contact{
+        background: #f2f2f2;
         text-align: center;
         
     }
